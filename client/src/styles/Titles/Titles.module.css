@@ -1,0 +1,8 @@
+.title {
+  font-size: 1rem;
+  color: var(--color-active);
+  margin-bottom: 1.8rem;
+}
+.title h2 {
+  font-weight: 400;
+}/*# sourceMappingURL=Titles.module.css.map */

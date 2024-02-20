@@ -1,0 +1,38 @@
+li {
+  a {
+    position: relative;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #333;
+    transition: color 200ms ease;
+    &:focus-visible {
+      h2,
+      h3,
+      span {
+        color: #333;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h2,
+  h3,
+  span {
+    color: var(--color-inactive);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color ease-in-out 250ms;
+    &:hover {
+      color: var(--color-active);
+    }
+  }
+
+  .active {
+    h2,
+    h3,
+    span {
+      color: var(--color-active);
+    }
+  }
+}

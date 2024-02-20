@@ -1,0 +1,28 @@
+@use "../mixins.scss" as *;
+.container {
+    width: 100%;
+    form {
+        width: 100%;
+    }
+
+    .firstName,
+    .lastName {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    option,
+    select {
+        @include inputStyle();
+        margin-bottom: 1rem;
+    }
+    button {
+        @include pinkButton(140px, 40px);
+    }
+}

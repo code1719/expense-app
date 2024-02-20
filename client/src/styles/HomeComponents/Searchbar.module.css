@@ -1,0 +1,67 @@
+.menu {
+  --font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+.menu .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.menu .searchContainer {
+  position: relative;
+  display: flex;
+  gap: 0.3rem;
+}
+@media screen and (max-width: 768px) {
+  .menu .searchContainer {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.menu .searchContainer svg {
+  color: var(--color-inactive);
+  font-size: calc(var(--font-size) + 0.2rem);
+}
+.menu .searchContainer input {
+  color: var(--color-inactive);
+  width: 300px;
+  font-size: var(--font-size);
+}
+@media screen and (max-width: 768px) {
+  .menu .searchContainer input {
+    width: 100%;
+  }
+}
+.menu .searchContainer:after {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background: var(--color-inactive);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.menu .menuLink {
+  transform: translateY(3px);
+}
+.menu .menuLink a {
+  font-size: var(--font-size);
+  color: var(--color-inactive);
+  transition: color ease-in-out 250ms;
+}
+.menu .menuLink a:hover {
+  color: var(--color-active);
+}
+@media screen and (max-width: 1050px) {
+  .menu .menuLink a {
+    display: none;
+  }
+}/*# sourceMappingURL=Searchbar.module.css.map */

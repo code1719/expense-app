@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .logo {
+    --font-size: 2rem;
+    font-size: var(--font-size);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    a {
+      color: var(--color-active);
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .mobileMenuLinks {
+      display: none;
+      @media screen and (max-width: 820px) {
+        display: unset;
+      }
+    }
+  }
+}
+
+.logout {
+  background: transparent;
+  border-radius: 6px;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-inactive);
+  cursor: pointer;
+  &:focus-visible {
+    outline: 2px solid black;
+  }
+  &:hover {
+    color: var(--color-active);
+  }
+}

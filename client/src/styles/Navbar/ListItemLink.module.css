@@ -1,0 +1,33 @@
+li a,
+li button {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 200ms ease;
+}
+li a:hover,
+li button:hover {
+  color: blue;
+}
+li button {
+  background: none;
+  cursor: pointer;
+}
+li h2,
+li h3,
+li span {
+  color: var(--color-inactive);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color ease-in-out 250ms;
+}
+li h2:hover,
+li h3:hover,
+li span:hover {
+  color: var(--color-active);
+}
+li .active h2,
+li .active h3,
+li .active span {
+  color: var(--color-active);
+}/*# sourceMappingURL=ListItemLink.module.css.map */
